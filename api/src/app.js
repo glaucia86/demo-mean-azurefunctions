@@ -20,7 +20,7 @@ const databaseCosmosDb = require('./config/databaseCosmosDb'); // ==> aqui conex
 mongoose.Promise = global.Promise;
 
 // ==> Conexão Base de Dados:
-mongoose.connect(databaseCosmosDb.cosmosdb.url, { useNewUrlParser: false }).then(() => {
+mongoose.connect(databaseCosmosDb.cosmosdb.url, { useNewUrlParser: true }).then(() => {
   console.log('A Base de dados foi conectada com sucesso!');
 }, (err) => {
   console.log(`Erro ao conectar com a Base de Dados...: ${err}`);

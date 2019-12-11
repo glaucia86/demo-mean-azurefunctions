@@ -24,7 +24,8 @@ export class PalestranteService {
     // ==> (POST - Url no Back-End): http://localhost:8000/api/palestrante
     this
       .http
-      .post('http://localhost:8000/api/palestrante', palestrante)
+      // .post('http://localhost:8000/api/palestrantes', palestrante)
+      .post(`${this.uri}/palestrantes`, palestrante)
       .subscribe(res => console.log('Feito'));
   }
 
@@ -35,7 +36,8 @@ export class PalestranteService {
     // ==> (GET - Url no Back-End): http://localhost:8000/api/palestrantes
     return this
       .http
-      .get('http://localhost:8000/api/palestrantes');
+      // .get('http://localhost:8000/api/palestrantes');
+      .get(`${this.uri}/palestrantes`);
   }
 
   /**
