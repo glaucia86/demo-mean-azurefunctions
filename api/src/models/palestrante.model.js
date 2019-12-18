@@ -21,7 +21,7 @@ const palestranteSchema = new Schema({
   tituloPalestra: { type: String, required: true, max: 80 },
 }, {
   timestamps: true,
-  collection: 'palestrante',
+  collection: 'palestrantes',
 });
 
 module.exports = mongoose.model('Palestrante', palestranteSchema);
