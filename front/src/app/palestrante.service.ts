@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class PalestranteService {
 
   // ==> Uri da api (Back-End)
-  uri = 'http://localhost:7071/api';
+  uri = 'http://localhost:8000/api';
 
   constructor(private http: HttpClient) { }
 
@@ -21,7 +21,7 @@ export class PalestranteService {
     };
     console.log(palestrante);
 
-    // ==> (POST - Url no Back-End): http://localhost:8000/api/palestrante
+    // ==> (POST - Url no Back-End): http://localhost:8000/api/palestrantes
     this
       .http
       .post(`${this.uri}/palestrantes`, palestrante)

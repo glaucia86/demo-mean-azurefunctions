@@ -49,6 +49,50 @@ Depois bastam abrir o browser em **localhost:4200** (porta padrão de uma aplica
 
 Depois bastam abrir o postamn em **localhost:8000** e testar as requisições
 
+## Executando a aplicação na api do Azure Functions
+
+1. Para executar localmente a aplicação, você precisa primeiramente baixar o pacote npm do azure functions tools globalmente na sua máquina por meio do comando:
+
+```bash
+> npm i -g azure-functions-core-tools --unsafe-perm true
+```
+
+2. Vá até a pasta: `serverless-api-mongo` e crie na raiz principal do projeto o arquivo: `local.settings.json` e inclua o seguinte bloco de código:
+
+```json
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "AzureWebJobsStorage": "{AzureWebJobsStorage}"
+  },
+  "Host": {
+    "LocalHttpPort": 7071,
+    "CORS": "*"
+  }
+}
+```
+
+3. Execute o MongoDb ou MongoDb Compass!
+
+4. Agora, abre novamente o seu prompt de comando e execute o comando:
+
+```bash
+> func host start
+```
+
+5. Agora vá até o projeto `front` e vá até: `src -> app -> palestrante.service.ts` e altere a linha `10` e inclua a seguinte uri:
+
+```javascript
+  uri = 'http://localhost:7071/api';
+```
+
+6. Execute a aplicação Front com o comando:
+
+```bash
+> ng serve -o
+```
+
 E vòilá! :heart: :heart:
 
 ## Links & Recursos Importantes ⭐️
