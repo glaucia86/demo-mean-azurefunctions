@@ -55,7 +55,7 @@ E vòilá! :heart: :heart:
 
 Durante a live, comentei sobre importantes documentações, links e recursos que podem auxiliar o seu conhecimento sobre Serverless & Azure Functions
 
-- ✅ **[Slides palestra - Criando API's Escaláveis com Node.js & Arquitetura Serverless](http://bit.ly/slides-braziljs19)**
+- ✅ **[Slides da Palestra - Criando API's Escaláveis com Node.js & Arquitetura Serverless](http://bit.ly/slides-braziljs19)**
 - ✅ **[Azure para devs JavaScript & Node.js](https://docs.microsoft.com/pt-br/javascript/azure/?WT.mc_id=mean_azurefunctions-github-gllemos&view=azure-node-latest)**
 - ✅ **[Documentação Azure Functions](https://docs.microsoft.com/pt-br/azure/azure-functions/?WT.mc_id=mean_azurefunctions-github-gllemos)**
 - ✅ **[Criando a sua Primeira Função no Visual Studio Code](https://docs.microsoft.com/pt-br/azure/azure-functions/functions-create-first-function-vs-code?WT.mc_id=mean_azurefunctions-github-gllemos)**
