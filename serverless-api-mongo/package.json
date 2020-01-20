@@ -7,6 +7,6 @@
   },
   "author": "",
   "dependencies": {
-    "mongodb": "^3.4.0"
+    "mongodb": "^3.3.1"
   }
 }
