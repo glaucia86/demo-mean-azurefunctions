@@ -47,7 +47,7 @@ Depois bastam abrir o browser em **localhost:4200** (porta padrão de uma aplica
 > nodemon
 ```
 
-Depois bastam abrir o postamn em **localhost:8000** e testar as requisições
+Depois bastam abrir o postman em **localhost:8000** e testar as requisições.
 
 ## Executando a aplicação na api do Azure Functions
 
